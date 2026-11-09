@@ -1,0 +1,108 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "left main right"
+        "footer footer footer";
+    gap: 5px;
+}
+
+header, nav, aside, main, footer{
+    border-radius: 8px;
+    padding: 4px;
+    margin: 0;
+}
+
+header, nav, footer{
+    background-color: rgb(31, 53, 53);
+    text-align: center;
+    color: white;
+}
+
+aside, main{
+    border: 1px solid gray;
+    padding-left: 15px;
+}
+
+header{
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    height: 100%;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+aside{
+    background-color: snow;
+}
+
+.asideLeft{
+    grid-area: left;
+}
+
+main{
+    grid-area: main;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(0, 100, 0);
+    color: white;
+}
+
+.asideRight{
+    grid-area: right;
+}
+
+footer{
+    grid-area: footer;
+}

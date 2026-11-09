@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi remontowe - Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Firma Remontowo-Budowlana "BUD-MEX"</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="kalkulator.html">Kalkulator Usług</a></li>
+            <li><a href="kontakt.html">Cennik i Kontakt</a></li>
+        </ul>
+    </nav>
+    <aside class="asideLeft">
+        <h3>Informacja</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis possimus qui neque, id quo deserunt itaque, debitis dolor pariatur architecto cumque sunt laudantium dolorum aut provident culpa iusto eius! Suscipit?</p>
+    </aside>
+    <main>
+        <h2>Kalkulator Wyceny Remontu</h2>
+        <fieldset>
+            <legend>Parametry pomieszcenia</legend>
+            <form method="post">
+                <label>Powierzchnia (m³): </label>
+                <input type="number" name="powierzchnia" id="powierzchnia" min="0">
+
+                <label>Rodzaj usługi: </label>
+                <select name="usluga" id="usluga">
+                    <option value="malowanie">Malowanie(20 zł/m²)</option>
+                    <option value="panele">Układanie paneli (45 zł/m²)</option>
+                    <option value="plytki">Układanie płytek (80z zł/m²)</option>
+                </select>
+            </form>
+        </fieldset>
+    </main>
+    <aside class="asideRight">
+
+    </aside>
+    <footer>
+        <p>Autor strony: Tomasz Kardacz</p>
+    </footer>
+</body>
+</html>
